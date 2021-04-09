@@ -8,12 +8,12 @@ describe('Block', () => {
         lastHash: lastHash,
         hash: hash,
         data: data
-     });
+    });
 
-     it('has a timestamp, lashHash, hash, and data attribute', () => {
-         expect(block.timestamp).toEqual(timestamp);
-         expect(block.lastHash).toEqual(lastHash);
-         expect(block.hash).toEqual(hash);
-         expect(block.data).toEqual(data);
-     });
+    it('has a timestamp, lashHash, hash, and data attribute', () => {
+        expect(block.timestamp).toEqual(timestamp);
+        expect(block.lastHash).toEqual(lastHash);
+        expect(block.hash).toEqual(hash);
+        expect(block.data).toEqual(data);
+    });
 });

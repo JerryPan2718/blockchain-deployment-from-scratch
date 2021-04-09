@@ -1,15 +1,24 @@
 {
-  "name": "blockchainDev",
+  "name": "blockchain-deployment-from-scratch",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "block.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
   "scripts": {
     "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JerryPan2718/blockchain-deployment-from-scratch.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jest": "^23.6.0"
-  }
+  "bugs": {
+    "url": "https://github.com/JerryPan2718/blockchain-deployment-from-scratch/issues"
+  },
+  "homepage": "https://github.com/JerryPan2718/blockchain-deployment-from-scratch#readme"
 }
