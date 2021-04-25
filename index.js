@@ -3,9 +3,13 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const Blockchain = require('./blockchain');
 const PubSub = require('./app/pubsub');
+const TransactionPool = require('./wallet/transaction-pool');
+const Wallet = require('./wallet');
 
 const app = express();
 const blockchain = new Blockchain();
+const transactionPool = TransactionPool();
+const wallet = new Wallet();
 const pubsub = new PubSub({ blockchain });
 
 const DEFAULT_PORT = 3000;

@@ -150,9 +150,15 @@ describe('Transaction', () => {
                     });
                 });
 
-                it('adds to the recipient amount') {
-                    expect(transaction.outputMap[nextRecipient]).toEqual(nextAmount + addedAmount);
-                }
+                it('adds to the recipient amount', () => {
+                    expect(transaction.outputMap[nextRecipient])
+                        .toEqual(nextAmount + addedAmount);
+                });
+
+                it('subtracts the amount from the original sender output amount', () => {
+                    expect(transaction.outputMap[senderWallet.publicKey])
+                        .toEqual(originalSenderOutput - nextAmount - addedAmount);
+                });
            });
         });
    });
