@@ -66,7 +66,7 @@ class PubSub {
         this.publish({
             channel: CHANNELS.TRANSACTION,
             message: JSON.stringify(transaction)
-        })
+        });
     }
 }
 
