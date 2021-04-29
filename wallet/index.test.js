@@ -145,7 +145,6 @@ describe('Wallet', () => {
       describe('and the wallet has made a transaction', () => {
         let recentTransaction;
 
-
         beforeEach(() => {
           recentTransaction = wallet.createTransaction({
             recipient: 'foo-address',
